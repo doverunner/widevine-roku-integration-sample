@@ -1,4 +1,4 @@
-## **PallyCon Widevine SDK** for Roku<sup>&reg;</sup> Implementation Guide
+## **PallyCon Widevine DRM Integration Sample for Roku**
 
 
 
@@ -10,14 +10,14 @@
 
 ### **Note**
 
-- This SDK has been tested on [Roku<sup>&reg;</sup> Streaming Stick+<sup>&reg;</sup>](https://www.roku.com/products/streaming-stick-plus) and Roku OS 14.0.0
+- This sample has been tested on [Roku<sup>&reg;</sup> Streaming Stick+<sup>&reg;</sup>](https://www.roku.com/products/streaming-stick-plus) and Roku OS 14.0.0
 - For more information about the Roku TV development environment, check [Roku Developers](https://developer.roku.com/en-gb/docs/developer-program/getting-started/roku-dev-prog.md).
 
 
 
 ### **Quick Start**
 
-You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your development project by following these steps:
+You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> to your development project by following these steps:
 
 1. Extract `PallyconRoku.zip` file.
 
@@ -29,14 +29,14 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
 
 4. Call `setDrmDataToPlayerIfAvailable()` function before playing the content.
 
-6. Add the below code in XML file which call functions of PallyCon Widevine SDK.
+6. Add the below code in XML file which call functions of PallyCon Widevine Sample for Roku.
    ```xml
    <script type="text/brightscript" uri="pkg:/components/PallyCon.brs"/>
    ```
 
 
 
-### **PallyCon Widevine SDK API Guide** ###
+### **PallyCon Widevine Roku Integration Guide** ###
 
 #### parsePallyConDrmDataFromJson
 
@@ -57,7 +57,7 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
 
 - PallyCon Multi-DRM data is the value used to request Widevine license through PallyCon Multi-DRM service.
 
-  * drmSchemeUuid : DRM type name. This SDK supports "widevine" only.
+  * drmSchemeUuid : DRM type name. This sample supports "widevine" only.
 
   * drmLicenseUrl : License acquisition URL
 
@@ -66,7 +66,7 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
   * token: pri-built license token
 
 
-- `channel1.json` file in this SDK includes the sample data of PallyCon Multi-DRM. You must modify this function if you use XML data instead of JSON or your own JSON format.
+- `channel1.json` file in this sample includes the sample data of PallyCon Multi-DRM. You must modify this function if you use XML data instead of JSON or your own JSON format.
 - If the drmSchemeUuid is not "widevine", this function outputs internal log message and returns.
 
 
