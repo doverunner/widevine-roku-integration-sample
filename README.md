@@ -1,4 +1,4 @@
-## **PallyCon Widevine DRM Integration Sample for Roku**
+## **DoveRunner Widevine DRM Integration Sample for Roku**
 
 
 
@@ -17,7 +17,7 @@
 
 ### **Quick Start**
 
-You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> to your development project by following these steps:
+You can apply the DoveRunner Widevine Integration Sample for Roku<sup>&reg;</sup> to your development project by following these steps:
 
 1. Extract `PallyconRoku.zip` file.
 
@@ -29,18 +29,18 @@ You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> 
 
 4. Call `setDrmDataToPlayerIfAvailable()` function before playing the content.
 
-6. Add the below code in XML file which call functions of PallyCon Widevine Sample for Roku.
+6. Add the below code in XML file which call functions of DoveRunner Widevine Sample for Roku.
    ```xml
    <script type="text/brightscript" uri="pkg:/components/PallyCon.brs"/>
    ```
 
 
 
-### **PallyCon Widevine Roku Integration Guide** ###
+### **DoveRunner Widevine Roku Integration Guide** ###
 
 #### parsePallyConDrmDataFromJson
 
-- Adds PallyCon Multi-DRM data parsed from JSON data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
+- Adds DoveRunner Multi-DRM data parsed from JSON data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
 
   ```BrightScript
   ' Parse JSON data which contains DRM data and set DRM data to content meta data
@@ -55,7 +55,7 @@ You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> 
 
 
 
-- PallyCon Multi-DRM data is the value used to request Widevine license through PallyCon Multi-DRM service.
+- DoveRunner Multi-DRM data is the value used to request Widevine license through DoveRunner Multi-DRM service.
 
   * drmSchemeUuid : DRM type name. This sample supports "widevine" only.
 
@@ -66,16 +66,16 @@ You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> 
   * token: pri-built license token
 
 
-- `channel1.json` file in this sample includes the sample data of PallyCon Multi-DRM. You must modify this function if you use XML data instead of JSON or your own JSON format.
+- `channel1.json` file in this sample includes the sample data of DoveRunner Multi-DRM. You must modify this function if you use XML data instead of JSON or your own JSON format.
 - If the drmSchemeUuid is not "widevine", this function outputs internal log message and returns.
 
 
 
 ##### Parameters:
 
-- jsonData - JSON data which includes PallyCon Multi-DRM data
+- jsonData - JSON data which includes DoveRunner Multi-DRM data
 
-- contentMetadata - [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) object which will be set PallyCon Multi-DRM data.
+- contentMetadata - [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) object which will be set DoveRunner Multi-DRM data.
 
 
 
@@ -105,9 +105,9 @@ You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> 
 
   
 
-- The [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) object must contain [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) which contains PallyCon Multi-DRM data. In other words, 'content' field of [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) must be set and the value of 'content' must contain PallyCon Multi-DRM data.
+- The [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) object must contain [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) which contains DoveRunner Multi-DRM data. In other words, 'content' field of [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) must be set and the value of 'content' must contain DoveRunner Multi-DRM data.
 
-- Please refer to [parsePallyConDrmDataFromJson()](#parsePallyConDrmDataFromJson) for how to add PallyCon Multi-DRM data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
+- Please refer to [parsePallyConDrmDataFromJson()](#parsePallyConDrmDataFromJson) for how to add DoveRunner Multi-DRM data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
 
 
 
@@ -122,7 +122,7 @@ You can apply the PallyCon Widevine Integration Sample for Roku<sup>&reg;</sup> 
 - Error code
 
   ```
-  1: The vidoeNode did not contain PallyCon Multi-DRM data. One of the following cases:
+  1: The vidoeNode did not contain DoveRunner Multi-DRM data. One of the following cases:
      * The content is Non-DRM.
      * The content is DRM enable but the application did not call parsePallyConDrmDataFromJson().
   0: Successful.
