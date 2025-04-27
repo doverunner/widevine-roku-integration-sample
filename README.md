@@ -1,4 +1,4 @@
-## **PallyCon Widevine SDK** for Roku<sup>&reg;</sup> Implementation Guide
+## **Multi-Drm Widevine SDK** for Roku<sup>&reg;</sup> Implementation Guide
 
 
 
@@ -17,30 +17,30 @@
 
 ### **Quick Start**
 
-You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your development project by following these steps:
+You can add the Multi-Drm Widevine SDK for Roku<sup>&reg;</sup> to your development project by following these steps:
 
-1. Extract `PallyconRoku.zip` file.
+1. Extract `MultiDrmRoku.zip` file.
 
-2. Copy `PallyCon.brs` file in `components/PallyCon` folder to `components` folder in your project.
+2. Copy `Multi-Drm.brs` file in `components/Multi-Drm` folder to `components` folder in your project.
 
-3. Call `parsePallyConDrmDataFromJson()` function at building [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) part in your project.
-   * You may modify implementation of `parsePallyConDrmDataFromJson()`.
+3. Call `parseMultiDrmDataFromJson()` function at building [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) part in your project.
+   * You may modify implementation of `parseMultiDrmDataFromJson()`.
    * Please refer to API Guide at the bottom of this document for detail information.
 
 4. Call `setDrmDataToPlayerIfAvailable()` function before playing the content.
 
-6. Add the below code in XML file which call functions of PallyCon Widevine SDK.
+6. Add the below code in XML file which call functions of Multi-Drm Widevine SDK.
    ```xml
-   <script type="text/brightscript" uri="pkg:/components/PallyCon.brs"/>
+   <script type="text/brightscript" uri="pkg:/components/Multi-Drm.brs"/>
    ```
 
 
 
-### **PallyCon Widevine SDK API Guide** ###
+### **Multi-Drm Widevine SDK API Guide** ###
 
-#### parsePallyConDrmDataFromJson
+#### parseMultiDrmDataFromJson
 
-- Adds PallyCon Multi-DRM data parsed from JSON data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
+- Adds DOVERUNNER Multi-DRM data parsed from JSON data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
 
   ```BrightScript
   ' Parse JSON data which contains DRM data and set DRM data to content meta data
@@ -50,12 +50,12 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
   ' @see <a href="https://sdkdocs.roku.com/display/sdkdoc/Content+Meta-Data">Content Meta Data</a>
   ' @return none
   
-  parsePallyConDrmDataFromJson(jsonData as object, contentMetadata as object) as void
+  parseMultiDrmDataFromJson(jsonData as object, contentMetadata as object) as void
   ```
 
 
 
-- PallyCon Multi-DRM data is the value used to request Widevine license through PallyCon Multi-DRM service.
+- Multi-Drm Multi-DRM data is the value used to request Widevine license through Multi-DRM service.
 
   * drmSchemeUuid : DRM type name. This SDK supports "widevine" only.
 
@@ -66,16 +66,16 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
   * token: pri-built license token
 
 
-- `channel1.json` file in this SDK includes the sample data of PallyCon Multi-DRM. You must modify this function if you use XML data instead of JSON or your own JSON format.
+- `channel1.json` file in this SDK includes the sample data of Multi-DRM. You must modify this function if you use XML data instead of JSON or your own JSON format.
 - If the drmSchemeUuid is not "widevine", this function outputs internal log message and returns.
 
 
 
 ##### Parameters:
 
-- jsonData - JSON data which includes PallyCon Multi-DRM data
+- jsonData - JSON data which includes Multi-DRM data
 
-- contentMetadata - [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) object which will be set PallyCon Multi-DRM data.
+- contentMetadata - [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) object which will be set Multi-DRM data.
 
 
 
@@ -91,7 +91,7 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
 
   ```BrightScript
   ' Set DRM custom data to videoPlayer
-  ' @param video video node. It must contain content node and the content node must contain DRM data calling {@link .parsePallyDrmDataFromJson parsePallyDrmDataFromJson()}
+  ' @param video video node. It must contain content node and the content node must contain DRM data calling {@link .parseMultiDrmDataFromJson parseMultiDrmDataFromJson()}
   ' @return 0 if succeed, otherwise non-zero error code
   ' @see <a href="https://sdkdocs.roku.com/display/sdkdoc/Video">Video node</a>
   ' @see "Error code"
@@ -105,9 +105,9 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
 
   
 
-- The [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) object must contain [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) which contains PallyCon Multi-DRM data. In other words, 'content' field of [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) must be set and the value of 'content' must contain PallyCon Multi-DRM data.
+- The [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) object must contain [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md) which contains Multi-DRM data. In other words, 'content' field of [Video Node](https://developer.roku.com/en-gb/docs/references/scenegraph/media-playback-nodes/video.md) must be set and the value of 'content' must contain Multi-DRM data.
 
-- Please refer to [parsePallyConDrmDataFromJson()](#parsePallyConDrmDataFromJson) for how to add PallyCon Multi-DRM data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
+- Please refer to [parseMultiDrmDataFromJson()](#parseMultiDrmDataFromJson) for how to add Multi-DRM data to [Content Meta-Data](https://developer.roku.com/en-gb/docs/developer-program/getting-started/architecture/content-metadata.md).
 
 
 
@@ -122,9 +122,9 @@ You can add the PallyCon Widevine SDK for Roku<sup>&reg;</sup> to your developme
 - Error code
 
   ```
-  1: The vidoeNode did not contain PallyCon Multi-DRM data. One of the following cases:
+  1: The vidoeNode did not contain Multi-DRM data. One of the following cases:
      * The content is Non-DRM.
-     * The content is DRM enable but the application did not call parsePallyConDrmDataFromJson().
+     * The content is DRM enable but the application did not call parseMultiDrmDataFromJson().
   0: Successful.
   -1: The vidoeNode did not contain Content Meta-Data.
   -2: Failure to set the values for license acquisition.

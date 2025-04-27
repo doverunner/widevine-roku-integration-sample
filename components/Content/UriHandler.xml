@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2016 Roku Corp.  All Rights Reserved. -->
-<!-- Copyright 2017 INKA ENTWORKS. All Rights Reserved. -->
+<!-- Copyright 2017 DOVERUNNER. All Rights Reserved. -->
 
 <component name="UriHandler" extends="Task" >
 	<interface>

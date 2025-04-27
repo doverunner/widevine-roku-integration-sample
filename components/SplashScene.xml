@@ -14,7 +14,7 @@
 		<!-- Overhang Node -->
 		<Overhang
 			showClock="true"
-			title="Pallycon Player" />
+			title="Multi-Drm Player" />
 
 		<!-- Details screen with play button -->
 		<DetailsScreen

@@ -2,7 +2,7 @@
 
 '*******************************************************************************
 '#
-'# Copyright 2017 INKA ENTWORKS. All Rights Reserved.
+'# Copyright 2017 DOVERUNNER. All Rights Reserved.
 '#
 '*******************************************************************************
 
@@ -114,7 +114,7 @@ sub onItemSelected()
 		' first button is Play
 		mylog("'play' selected")
 		
-		'''' INKA DRM
+		'''' Multi DRM
 		' Get custom data before playback
 		if setDrmDataToPlayerIfAvailable(m.videoPlayer) < 0
 			showdialog("Error", "[Internal DRM failed]" + chr(10) + "Please contact DRM provider.") 

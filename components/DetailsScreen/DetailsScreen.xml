@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2016 Roku Corp.  All Rights Reserved. -->
-<!-- Copyright 2017 INKA ENTWORKS. All Rights Reserved. -->
+<!-- Copyright 2017 DOVERUNNER. All Rights Reserved. -->
 
 <!-- node that renders details screen. handles start of video playback -->
 <component name="DetailsScreen" extends="Group" initialFocus="Buttons">
@@ -77,7 +77,7 @@
 		<!-- Overhang Node (has to be rendered after others) -->
 		<Overhang
 			showClock="true"
-			title="Pallycon Player" />
+			title="Multi-Drm Player" />
 
 		<!-- Playback node -->
 		<Video
@@ -107,7 +107,6 @@
 	<!-- main handler -->
 	<script type="text/brightscript" uri="pkg:/components/DetailsScreen/DetailsScreen.brs" />
 	
-	<!-- INKA -->
-	<!-- Function for PallyCon DRM -->
-	<script type="text/brightscript" uri="pkg:/components/PallyCon/PallyCon.brs"/>
+	<!-- Function for Multi DRM -->
+	<script type="text/brightscript" uri="pkg:/components/Multi-Drm/Multi-Drm.brs"/>
 </component>

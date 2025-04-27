@@ -2,7 +2,7 @@
 
 '*******************************************************************************
 '#
-'# Copyright 2017 INKA ENTWORKS. All Rights Reserved.
+'# Copyright 2017 DOVERUNNER. All Rights Reserved.
 '#
 '*******************************************************************************
 
@@ -64,9 +64,9 @@ sub parseResponse()
 			'[optional but recommended] background image url when content focused and selected
 			item.hdbackgroundimageurl = video.thumbnail_big
 
-			'''' INKA DRM
+			'''' Multi DRM
 			'Set DRM data if it is provided
-			parsePallyConDrmDataFromJson(video, item)
+			parseMultiDrmDataFromJson(video, item)
 			''''
 			result.push(item)
 	    end for			

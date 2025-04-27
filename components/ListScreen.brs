@@ -2,7 +2,7 @@
 
 '*******************************************************************************
 '#
-'# Copyright 2017 INKA ENTWORKS. All Rights Reserved.
+'# Copyright 2017 DOVERUNNER. All Rights Reserved.
 '#
 '*******************************************************************************
 
@@ -19,7 +19,7 @@ sub init()
 	m.RowList       =   m.top.findNode("RowList")
 	m.background    =   m.top.findNode("Background")
 	
-	'For testing with ROKU sample channels and INKA sample videos
+	'For testing with ROKU sample channels and DOVERUNNER sample videos
 	URLs = [
 		' Uncomment this line to simulate a bad request and make the dialog box appear
 		' "bad request",

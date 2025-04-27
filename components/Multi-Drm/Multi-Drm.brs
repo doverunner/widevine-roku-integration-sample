@@ -1,6 +1,6 @@
 '*******************************************************************************
 '#
-'# Copyright 2017 INKA ENTWORKS. All Rights Reserved.
+'# Copyright 2017 DOVERUNNER. All Rights Reserved.
 '#
 '*******************************************************************************
 
@@ -9,7 +9,7 @@
 ' @param jsonData json data which contains DRM data
 ' @param contentMetadata an object which contents meta data
 ' @see <a href="https://sdkdocs.roku.com/display/sdkdoc/Content+Meta-Data">Content Meta Data</a>
-sub parsePallyConDrmDataFromJson(jsonData as object, contentMetadata as object)
+sub parseMultiDrmDataFromJson(jsonData as object, contentMetadata as object)
 	drmData = {}
 
 	'Check that the JSON data contains DRM data
@@ -17,7 +17,7 @@ sub parsePallyConDrmDataFromJson(jsonData as object, contentMetadata as object)
 	if drmType <> invalid
 		drmType = LCase(drmType)
 		
-		'PallyCon SDK for ROKU only supports Widevine DRM
+		'Multi-Drm SDK for ROKU only supports Widevine DRM
 		if drmType = "widevine"
 			isDrm = true
 		else
@@ -52,7 +52,7 @@ sub parsePallyConDrmDataFromJson(jsonData as object, contentMetadata as object)
 end sub
 
 ' Set DRM custom data to videoPlayer
-' @param video video node. It must contain content node and the content node must contain DRM data calling {@link .parsePallyDrmDataFromJson parsePallyDrmDataFromJson()}
+' @param video video node. It must contain content node and the content node must contain DRM data calling {@link .parseMultiDrmDataFromJson parseMultiDrmDataFromJson()}
 ' @return 0 if succeed, otherwise non-zero error code
 ' @see <a href="https://sdkdocs.roku.com/display/sdkdoc/Video">Video node</a>
 ' @see "Error code"

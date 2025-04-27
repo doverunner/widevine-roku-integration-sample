@@ -2,7 +2,7 @@
 
 '*******************************************************************************
 '#
-'# Copyright 2017 INKA ENTWORKS. All Rights Reserved.
+'# Copyright 2017 DOVERUNNER. All Rights Reserved.
 '#
 '# This project is based on a ROKU SAMPLE APP, hero-grid-channel.zip
 '# You can get the base code at https://github.com/rokudev/sample-channels/
