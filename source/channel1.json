@@ -1,0 +1,30 @@
+{
+	"videos" : [
+		{
+			"type"	: "streaming",
+			"uri"	: "https://drm-contents.doverunner.com/bunny/stream.mpd",
+			"name"	: "Big Buck Bunny (Widevine)",
+			"drmSchemeUuid"	: "widevine",
+			"drmLicenseUrl"	: "https://drm-license.doverunner.com/ri/licenseManager.do",
+			"cid"	: "bigbuckbunny",
+			"token"	: "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ0ZXN0VXNlciIsImRybV90eXBlIjoid2lkZXZpbmUiLCJzaXRlX2lkIjoiREVNTyIsImhhc2giOiJnaURuSXVMbDk5c2t0UzA0bUdzYis2WEVaXC9uVDhMZjZVRWtTais5c1R5az0iLCJjaWQiOiJiaWdidWNrYnVubnkiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZnhEY2NtN2NXZFZYcXJkTWdBUWptcVo5bzdYTEZ6MjBOaG1Kdklpd1FidWhLaCtDMmZJSEw5T3UxU09Bc2hQU0FWZHhhWVVKSnJsWjVVMXU1UGNlcjE0NVpCczdnc3ZRc0lsbDlGVHZXanQ3bWhaOHJ3ejdybVNYcURBdEdqYTRsYmVrUnhcL1pyRWx4dkJhWXV0YWFvdVlISWpkNlZpRWVXZEVpRzJIV0VIMGczcW1LYW1QbUp2VUluN0tVODZrUDQiLCJ0aW1lc3RhbXAiOiIyMDI2LTA0LTAyVDAwOjM3OjE1WiJ9",
+			"releaseDate" : "April 10, 2008",
+			"description" : "Blender Foundation",
+			"thumbnail_small": "https://drm-contents.doverunner.com/bunny/poster_398x224.jpg",
+			"thumbnail_big"	 : "https://drm-contents.doverunner.com/bunny/poster_1920x1080.jpg"
+		},
+		{
+			"type"	: "streaming",
+			"uri"	: "https://drm-contents.doverunner.com/TEST/PACKAGED_CONTENT/TEST_SIMPLE/cmaf/stream.mpd",
+			"name"	: "CMAF (Widevine)",
+			"drmSchemeUuid"	: "widevine",
+			"drmLicenseUrl"	: "https://drm-license.doverunner.com/ri/licenseManager.do",
+			"cid"	: "TestRunner",
+			"token"	: "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ0ZXN0VXNlciIsImRybV90eXBlIjoid2lkZXZpbmUiLCJzaXRlX2lkIjoiREVNTyIsImhhc2giOiJUK1c0ckdGYkZFQ0VCU2FNdlY4akU4aVFIUVVVMnZMUFNjamkxbUs5cjhNPSIsImNpZCI6IlRlc3RSdW5uZXIiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZnhEY2NtN2NXZFZYcXJkTWdBUWptcVo5bzdYTEZ6MjBOaG1Kdklpd1FidWhLaCtDMmZJSEw5T3UxU09Bc2hQU0FWZHhhWVVKSnJsWjVVMXU1UGNlcjE0NVpCczdnc3ZRc0lsbDlGVHZXanQ3bWhaOHJ3ejdybVNYcURBdEdqYTRsYmVrUnhcL1pyRWx4dkJhWXV0YWFvdVlISWpkNlZpRWVXZEVpRzJIV0VIMGczcW1LYW1QbUp2VUluN0tVODZrUDQiLCJ0aW1lc3RhbXAiOiIyMDI2LTA0LTAyVDAwOjM3OjMxWiJ9",
+			"releaseDate" : "April 10, 2008",
+			"description" : "Blender Foundation",
+			"thumbnail_small": "https://drm-contents.doverunner.com/bunny/poster_398x224.jpg",
+			"thumbnail_big"	 : "https://drm-contents.doverunner.com/bunny/poster_1920x1080.jpg"
+		}
+	]
+}

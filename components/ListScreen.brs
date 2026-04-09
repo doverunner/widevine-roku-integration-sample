@@ -23,7 +23,7 @@ sub init()
 	URLs = [
 		' Uncomment this line to simulate a bad request and make the dialog box appear
 		' "bad request",
-		"pkg:/channels/channel1.json"		
+		"pkg:/source/channel1.json"
 	]
 	
 	'Make a request for each "row" in the UI (in the order that you want content filled)
